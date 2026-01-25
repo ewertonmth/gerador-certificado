@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+    <link rel="stylesheet" href="./src/assets/css/ui-kit.css">
+    <title>GERADOR DE CERTIFCADO</title>
+</head>
+<body>
+    <section class="flex flex-direction-column align-items-center justify-content-center font-family-inter">
+        <img src="./src/assets/images/logo-grupomed.png" alt="Logo GrupoMed" class="logo">
+        <div class="flex flex-direction-column width-75 height-100 align-items-center justify-content-center margin-top-50 glass-effect">
+            <div class="flex align-items-center justify-content-center">
+                <h1 class="text-center">GERADOR DE CERTIFICADO</h1>
+            </div>
+            <div class="flex flex-direction-column align-items-center justify-content-center">
+                <form action="" method="POST" class="flex flex-direction-column align-items-center justify-content-center width- gap-10 margin-bottom-50 ">
+                    <input type="text" name="name" placeholder="Nome do aluno" class="input-width-420 border-permitted" required>
+                    <select name="course" class="input-width-420 border-permitted" required>
+                        <option value="">Selecione um Curso</option>    
+                        <option value="curso1">Curso 1</option>
+                        <option value="curso2">Curso 2</option>
+                        <option value="curso3">Curso 3</option>
+                    </select>
+                    <input type="text" name="workload" placeholder="Carga Horária" class="input-width-420 cursor-not-allowed border-prohibited" readonly>
+                    <b class="font-family-roboto">Data Inicial:</b> <input type="date" name="start_date" placeholder="Data Inicial" class="width-50" required>
+                    <b class="font-family-roboto">Data Final:</b> <input type="date" name="end_date" placeholder="Data Final (calculada)" class="width-50 cursor-not-allowed border-prohibited" readonly>
+                    <button type="submit" class="button-primary margin-top-20">Gerar Certificado</button>
+                </form>
+            </div>
+
+        </div>
+    </section>  
+</body> 
+</html>
